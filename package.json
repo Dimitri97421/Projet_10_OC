@@ -20,7 +20,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "eslint .eslintrc.js ./src",
-    "format": "prettier ./src --write"
+    "format": "prettier ./src --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -50,5 +52,6 @@
     "eslint-plugin-react-hooks": "^4.5.0",
     "jest": "^27.5.1",
     "prettier": "^2.6.2"
-  }
+  },
+  "homepage": "https://dimitri97421.github.io/Projet_10_OC/"
 }
